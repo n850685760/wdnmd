@@ -1,0 +1,405 @@
+/*通用及可复用属性*/
+* {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+article , .box2{
+    width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+body{
+    background: burlywood;
+}
+img {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+}
+.header::before{
+    background: #000 linear-gradient(to left, #4cd964, #5ac8fa, #007aff, #34aadc, #5856d6, #ff2d55);
+    content: "";
+    height: 5px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.imgbox{
+    position: relative;
+}
+.box{
+    min-height: 30px;
+    min-width: 50px;
+    background: #fff;
+    border-radius: 3px;
+    padding: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.title{
+    font-size: 16px;
+    line-height: 40px;
+    border-bottom: 1px solid #eee;
+    color: #484848;
+    font-weight: normal;
+    position: relative;
+    margin-bottom: 10px;
+}
+.title::after{
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 2px;
+    background: #000;
+    left: 0;
+    bottom: 0;
+    transition: all .5s ease;
+}
+.title:hover:after{
+    width: 80px;
+}
+.imgStyle{
+    display: block;
+    margin: 20px 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.imgStyle img{
+    transition: all 0.6s;
+}
+.imgStyle :hover img{
+    transform: scale(1.1);
+}
+.text{
+    bottom: 0;
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+    color: #FFF;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 5px;
+    padding: 0 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-height: 24px;
+    height: 48px;
+}
+/*头部*/
+.header {
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    margin-bottom: 10px;
+}
+.headerBox {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+.headerBox .headerBox1 {
+    width: 30%;
+    height: 100%;
+    float: left;
+    line-height: 40px;
+    color: white;
+    font-size: 20px;
+}
+.headerBox .headerBox2 {
+    width: 50%;
+    float: left;
+
+}
+.headerBox2 a {
+    color: white;
+    float: left;
+    line-height: 40px;
+    margin-right: 30px;
+}
+.headerBox2 a:hover {
+    color: #00c1de;
+}
+.headerBox .headerBox3 {
+    width: 20%;
+    height: 100%;
+    float: left;
+
+}
+/*左*/
+.lBox{
+    width: 75%;
+    float: left;
+    overflow: hidden;
+    /*background: black;*/
+    min-height: 20px;
+}
+/*设计心得*/
+.xinde img{
+    height: 100px;
+    width: 25%;
+    float: left;
+    overflow: hidden;
+}
+.xinde h1{
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+.xinde p{
+    color: #666666;
+}
+/*博文*/
+.tuijian li{
+    overflow: hidden;
+    position: relative;
+    min-height: 100px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: #eee 1px dashed;
+}
+.tuijianList{
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.tuijianImg{
+    float: left;
+    width: 23.2%;
+    margin-right: 20px;
+    display: block;
+    overflow: hidden;
+    border-radius: 3px;
+    position: relative;
+}
+.tuijianImg img{
+    transition: all 0.6s;
+}
+.tuijianImg :hover img{
+    transform: scale(1.5);
+}
+.tuijian p{
+    font-size: 14px;
+    color: #666;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    margin-top: 15px;
+}
+.readmoreStyle{
+    display: block;
+    right: 10px;
+    bottom: 12px;
+    position: absolute;
+    padding: 3px 10px;
+    background: #12b7de;
+    color: #fff;
+    border-radius: 3px;
+}
+.avatarStyle{
+    display: inline;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px blue solid;
+}
+/*右*/
+.rBox{
+    width: 23.5%;
+    float: right;
+    overflow: hidden;
+    /*background: black;*/
+    min-height: 20px;
+}
+/*点击排行*/
+.rank ul{
+    list-style: none;
+    overflow: hidden;
+}
+.rank li{
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.rank ul li i{
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: #B1B1B1;
+    float: left;
+    margin-top: 8px;
+    margin-right: 10px;
+    position: relative;
+    font-style: normal
+}
+.rank ul li i::before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 9px;
+    color: white;
+    line-height: 16px;
+    width: 16px;
+    text-align: center;
+}
+.rank ul li:first-child i,.rank ul li:nth-child(2) i, .rank ul li:nth-child(3) i{
+    background: #FF6600;
+}
+.rank ul li:first-child i::before{
+    content: "1";
+}
+.rank ul li:nth-child(2) i::before{
+    content: "2";
+}
+.rank ul li:nth-child(3) i::before{
+    content: "3";
+}
+.rank ul li:nth-child(4) i::before{
+    content: "4";
+}
+.rank ul li:nth-child(5) i::before{
+    content: "5";
+}
+.rank ul li:nth-child(6) i::before{
+    content: "6";
+}
+.rank ul li:last-child i::before{
+    content: "7";
+}
+/*本栏推荐*/
+.zhanzhang li{
+    overflow: hidden;
+    margin-bottom: 10px;
+    height: 60px;
+}
+.zhanzhang .zhanzhangimgStyle{
+    float: left;
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+}
+.zhanzhang .zhanzhangimgStyle img{
+    transition: all 0.6s;
+}
+.zhanzhang li:hover img{
+    transform: scale(1.5);
+}
+.zhanzhang p{
+    margin-top: 4px;
+    line-height: 20px;
+    max-height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    font-size: 14px;
+}
+.biaoqian a{
+    color: white;
+    line-height: 24px;
+    height: 24px;
+    display: block;
+    background: #999;
+    float: left;
+    padding: 3px 10px;
+    margin: 10px 5px 0 0;
+    border-radius: 3px;
+}
+.biaoqian a:hover{
+    text-shadow: #484848 0 0 10px;
+}
+.biaoqian ul a:first-child{
+    background: #00c1de;
+}
+.biaoqian ul a:nth-child(2){
+    background: blueviolet;
+}
+.biaoqian ul a:nth-child(3){
+    background: purple;
+}
+/*猜你喜欢*/
+.cai li{
+    line-height: 22px;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 15px;
+}
+.cai a{
+    color: black;
+}
+.cai ul li::before{
+    position: absolute;
+    content: "";
+    width: 3px;
+    height: 3px;
+    background: #000;
+    border-radius: 10px;
+    left: 0px;
+    top: 10px;
+}
+/*站点信息*/
+.zhandian li{
+    min-height: 10px;
+    margin-bottom: 8px;
+}
+.zhandianimg{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+/*footer*/
+footer{
+    background: #373D41;
+    width: 100%;
+    border-top: #00C1DE 10px solid;
+    padding: 30px 0;
+    color: #73777a;
+    font-size: 14px;
+}
+.footerimg{
+    overflow: hidden;
+    float: left;
+    margin-right: 20px;
+}
+.footerimg li{
+    float: left;
+    margin: 0 10px;
+    text-align: center;
+}
+.footerimg img{
+    width: 100px;
+    height: 100px;
+}
+.footart b{
+    font-size: 16px;
+    color: #00c1de;
+}
+.footart p{
+    color: white;
+}
+.top{
+    width: 40px;
+    height: 40px;
+    background: url(../image/top.png) no-repeat center #000;
+    right: 60px;
+    bottom: 10%;
+    position: fixed;
+}
+
