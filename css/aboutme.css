@@ -18,6 +18,8 @@ img {
     display: block;
 }
 footer{
+    position: fixed;
+    bottom: 0;
     background: #373D41;
     width: 100%;
     border-top: #00C1DE 10px solid;
