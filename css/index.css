@@ -120,6 +120,14 @@ footer{
     transform: scale(1.2);
     filter: brightness(100%);
 }
+.bodyBox .bodyBox1:hover .leftbtn{
+    transition: all 0.6s;
+    opacity: 1;
+}
+.bodyBox .bodyBox1:hover .rightbtn{
+    transition: all 0.6s;
+    opacity: 1;
+}
 .bodyBox .bodyBox1 img{
     position: absolute;
     left: 0;
@@ -136,7 +144,8 @@ footer{
     top: 50%;
     margin-top: -15px;
     cursor: pointer;
-    z-index: 99999;
+
+    opacity: 0;
 }
 .leftbtn{
     left: 30px;
