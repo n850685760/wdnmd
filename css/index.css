@@ -733,4 +733,8 @@ article{
 /*    line-height: 22px;*/
 /*}*/
 
+.ad video{
+    height: 100%;
+    width: 100%;
+}
 
