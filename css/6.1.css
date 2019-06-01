@@ -60,7 +60,7 @@ footer{
 .top{
     width: 40px;
     height: 40px;
-    background: url(../gerenboke/image/top.png) no-repeat center #000;
+    background: url(../image/top.png) no-repeat center #000;
     right: 60px;
     bottom: 10%;
     position: fixed;
@@ -162,11 +162,11 @@ footer{
 }
 .leftbtn{
     left: 30px;
-    background-image: url("../gerenboke/image/left.png");
+    background-image: url("../image/left.png");
 }
 .rightbtn{
     right: 30px;
-    background-image: url("../gerenboke/image/right.png");
+    background-image: url("../image/right.png");
 }
 .downbtn{
     width: 120px;
