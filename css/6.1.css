@@ -1,0 +1,756 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+body {
+    background-color: burlywood;
+    line-height: 1.5;
+}
+img {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+}
+footer{
+    background: #373D41;
+    width: 100%;
+    border-top: #00C1DE 10px solid;
+    padding: 30px 0;
+    color: #73777a;
+    font-size: 14px;
+}
+.hide{
+    display:none;
+}
+.header::before{
+    background: #000 linear-gradient(to left, #4cd964, #5ac8fa, #007aff, #34aadc, #5856d6, #ff2d55);
+    content: "";
+    height: 5px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.footerimg{
+    overflow: hidden;
+    float: left;
+    margin-right: 20px;
+}
+.footerimg li{
+    float: left;
+    margin: 0 10px;
+    text-align: center;
+}
+.footerimg img{
+    width: 100px;
+    height: 100px;
+}
+.footart b{
+    font-size: 16px;
+    color: #00c1de;
+}
+.footart p{
+    color: white;
+}
+.top{
+    width: 40px;
+    height: 40px;
+    background: url(../gerenboke/image/top.png) no-repeat center #000;
+    right: 60px;
+    bottom: 10%;
+    position: fixed;
+}
+/*默认*/
+.header {
+    width: 100%;
+    height: 40px;
+    background-color: black;
+}
+.headerBox {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+.headerBox .headerBox1 {
+    width: 30%;
+    height: 100%;
+    float: left;
+    line-height: 40px;
+    color: white;
+    font-size: 20px;
+}
+.headerBox .headerBox2 {
+    width: 50%;
+    float: left;
+
+}
+.headerBox2 a {
+    color: white;
+    float: left;
+    line-height: 40px;
+    margin-right: 30px;
+}
+.headerBox2 a:hover {
+    color: #00c1de;
+}
+.headerBox .headerBox3 {
+    width: 20%;
+    height: 100%;
+    float: left;
+
+}
+/*头部*/
+.bodyBox {
+    width: 80%;
+    height: 300px;
+    margin: 10px auto;
+}
+.bodyBox .bodyBox1 {
+    width: 30%;
+    height: 100%;
+    float: left;
+    margin-right: 50px;
+    background-color: #ffffff;
+    overflow: hidden;
+    position: relative;
+}
+.bodyBox .bodyBox1:hover img{
+    /*transform: scale(1.2);*/
+    /*transition: all 0.6s;*/
+    /*filter: brightness(100%);*/
+}
+.bodyBox .bodyBox1:hover .leftbtn{
+    transition: all 0.6s;
+    opacity: 1;
+}
+.bodyBox .bodyBox1:hover .rightbtn{
+    transition: all 0.6s;
+    opacity: 1;
+}
+.bodyBox .bodyBox1 img{
+    position: absolute;
+    left: 365px;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    /*transition: all 0.6s;*/
+    /*filter: brightness(50%);*/
+}
+.bodyBox .bodyBox1 a:first-child > img{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    /*transition: all 0.6s;*/
+    /*filter: brightness(50%);*/
+}
+.leftbtn , .rightbtn{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    cursor: pointer;
+    z-index: 999;
+    opacity: 0;
+}
+.leftbtn{
+    left: 30px;
+    background-image: url("../gerenboke/image/left.png");
+}
+.rightbtn{
+    right: 30px;
+    background-image: url("../gerenboke/image/right.png");
+}
+.downbtn{
+    width: 120px;
+    bottom: 16px;
+    position: absolute;
+    /*background: #00c1de;*/
+    right: 47%;
+    margin-right: -60px;
+    z-index: 999999;
+}
+.downbtn li{
+    float: left;
+    margin-right: 16px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+    padding: 2px;
+}
+.downbtn li:hover{
+    background: red;
+}
+.bodyBox .bodyBox2 {
+    width: 30%;
+    height: 100%;
+    float: left;
+    margin-right: 50px;
+}
+.bodyBox .bodyBox2 .body-box1 {
+    width: 100%;
+    height: 45%;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+}
+.bodyBox .bodyBox2 .body-box1 img{
+    transition: all 0.6s;
+    filter: brightness(50%);
+}
+.bodyBox .bodyBox2 .body-box1:hover img {
+    transform: scale(1.5);
+    filter: brightness(100%);
+}
+.text{
+    bottom: 0;
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+    color: #FFF;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 5px;
+    padding: 0 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-height: 24px;
+    height: 48px;
+}
+.bodyBox .bodyBox3 {
+    width: 30%;
+    height: 90%;
+    float: right;
+    background-color: black;
+    padding: 10px;
+}
+.bodyBox .bodyBox3 ul:last-child{
+    display: flex;
+    justify-content: space-around;
+}
+.bodyBox .bodyBox3 ul:last-child > li{
+    width: 17%;
+}
+.bodyBox .bodyBox3 ul:last-child > li > a{
+    height: 53px;
+    display: block;
+    overflow: hidden;
+    box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba(0,0,0,.7);
+    border-radius: 50%;
+    margin: 0 5px;
+}
+.bodyBox .bodyBox3 ul:last-child > li > a .iconfont.icon-index{
+    text-align: center;
+    line-height: 53px;
+    color: #ef5509;
+    font-size: 30px;
+}
+.bodyBox .bodyBox3 ul:last-child > li > a .iconfont.icon-youjian{
+    text-align: center;
+    line-height: 53px;
+    color: #FF991A;
+    font-size: 30px;
+}
+.bodyBox .bodyBox3 ul:last-child > li > a .iconfont.icon-QQ{
+    text-align: center;
+    line-height: 53px;
+    color: #1296DB;
+    font-size: 30px;
+}
+.bodyBox .bodyBox3 ul:last-child > li > a .iconfont.icon-weixin{
+    text-align: center;
+    line-height: 53px;
+    color: #07AF12;
+    font-size: 30px;
+}
+.bodyBox .bodyBox3 h1{
+    color: gray;
+    margin-bottom: 20px;
+}
+.bodyBox .bodyBox3 li{
+    color: white;
+    margin-bottom: 10px;
+}
+/*身体*/
+.foot {
+    width: 1200px;
+    margin: 10px auto;
+    overflow: hidden;
+}
+.foot .footLeft {
+    padding: 20px;
+    width: 860px;
+    background-color: white;
+    float: left;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.foot .footLeft .leftTop {
+    width: 860px;
+    height: 40px;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    line-height: 40px;
+}
+.leftTop li{
+    margin-right: 10px;
+    overflow: hidden;
+    float: left;
+    position: relative;
+    cursor: pointer;
+}
+.newscurrent::after{
+    content: "";
+    background: #000;
+    width: 100px;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.foot .footLeft .leftImgBox{
+    width: 32%;
+    background-color: white;
+    float: left;
+    overflow: hidden;
+}
+.foot .footLeft .leftImgBox .Img{
+    position: relative;
+    height: 141.958px;
+    width: 275.194px;
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    display: block;
+}
+.foot .footLeft .leftImgBox .Img img{
+    transition: all 0.6s;
+    filter: brightness(50%);
+}
+.foot .footLeft .leftImgBox .Img:hover img{
+    transform: scale(1.5);
+    filter: brightness(100%);
+}
+.tebiebox{
+    width: 62%;
+    float: right;
+    overflow: hidden;
+}
+.tebiebox li{
+    padding: 4px 30px 0 20px;
+}
+.tebiebox li h1 a{
+    font-size: 16px;
+    color: #B1B1B1;
+}
+.tebiebox li h1 span{
+    width: 34px;
+    height: 20px;
+    display: inline-block;
+    background: #9a9a9a;
+    font-weight: normal;
+    line-height: 20px;
+    color: white;
+    text-align: center;
+    margin-right: 10px;
+}
+.tebiebox li p{
+    font-size: 16px;
+    line-height: 1.5;
+    height: 48px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:2;
+    overflow: hidden;
+    display: none;
+}
+.tebiebox li.hot p{
+    display: block;
+}
+.tebiebox li.hot span{
+    background: black;
+}
+.footLeft .leftTop a {
+    color: black;
+    float: left;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.foot .footRight {
+    width: 242px;
+    background-color: white;
+    float: right;
+    padding: 20px;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.footRight ul{
+    padding-top: 18px;
+}
+.footRight li{
+    width: 200px;
+    height: 29.333px;
+    padding-top: 4px;
+    padding-left: 30px;
+    padding-right: 12px;
+    margin-bottom: 12px;
+    background: #f6f6f6;
+    border-radius: 5px;
+}
+/*脚*/
+/*主体*/
+.box2{
+    width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+article{
+    width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+/*可复用属性*/
+.title{
+    font-size: 16px;
+    line-height: 40px;
+    border-bottom: 1px solid #eee;
+    color: #484848;
+    font-weight: normal;
+    position: relative;
+    margin-bottom: 10px;
+}
+.title::after{
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 2px;
+    background: #000;
+    left: 0;
+    bottom: 0;
+    transition: all .5s ease;
+}
+.title:hover:after{
+    width: 80px;
+}
+.box{
+    min-height: 30px;
+    min-width: 50px;
+    background: #fff;
+    border-radius: 3px;
+    padding: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.imgStyle{
+    display: block;
+    margin: 20px 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.imgStyle img{
+    transition: all 0.6s;
+    filter: brightness(20%);
+}
+.imgStyle :hover img{
+    transform: scale(1.1);
+    filter: brightness(100%);
+}
+.downbtn li.red{
+    background: red;
+}
+/*box*/
+/*左*/
+/*专题*/
+.lBox{
+    width: 75%;
+    float: left;
+    overflow: hidden;
+    /*background: white;*/
+    min-height: 20px;
+}
+.zhuanti .neirong ul{
+    padding: 10px 0 20px 10px;
+    overflow: hidden;
+    position: relative;
+}
+.zhuanti li{
+    width: 234.597px;
+    background: white;
+    float: left;
+    padding: 20px;
+    border-left: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    overflow: hidden;
+    position: relative;
+}
+.zhuanti .neirong{
+    position: relative;
+    overflow: hidden;
+}
+.zhuanti .neirong a{
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+.zhuanti .neirong img{
+    transition: all 0.6s;
+    height: 130px;
+}
+.zhuanti .neirong li:hover img{
+    transform: scale(1.1);
+}
+.zhuanti .neirong li:hover{
+    box-shadow: black 0 0 5px;
+    z-index: 999;
+}
+.neirong h3{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.neirong p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 76px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+.zhuanti .neirong ul:before{
+    content: "";
+    background: white;
+    left: 10px;
+    width: 1px;
+    position: absolute;
+    height: 100%;
+    z-index: 999;
+}
+.zhuanti .neirong ul:after{
+    content: "";
+    background: white;
+    left: 0;
+    height: 1px;
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    bottom: 20px;
+}
+.neirong .readmore:before{
+    content: "+";
+    color: #00c1de;
+}
+.title .cat {
+    float: right;
+}
+.title .cat >a{
+    margin-right: 15px;
+}
+/*最新博文*/
+.tuijian li{
+    overflow: hidden;
+    position: relative;
+    min-height: 100px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: #eee 1px dashed;
+}
+.tuijianList{
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.tuijianImg{
+    float: left;
+    width: 23.2%;
+    margin-right: 20px;
+    display: block;
+    overflow: hidden;
+    border-radius: 3px;
+    position: relative;
+}
+.tuijianImg img{
+  transition: all 0.6s;
+}
+.tuijianImg :hover img{
+    transform: scale(1.5);
+}
+.tuijian p{
+    font-size: 14px;
+    color: #666;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    margin-top: 15px;
+}
+.readmoreStyle{
+    display: block;
+    right: 10px;
+    bottom: 12px;
+    position: absolute;
+    padding: 3px 10px;
+    background: #12b7de;
+    color: #fff;
+    border-radius: 3px;
+}
+.avatarStyle{
+    display: inline;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px blue solid;
+}
+/*右*/
+/*点击排行*/
+.rBox{
+    width: 23.5%;
+    float: right;
+    overflow: hidden;
+    min-height: 20px;
+}
+.rank ul{
+    list-style: none;
+    overflow: hidden;
+}
+.rank li{
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.rank ul li i{
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: #B1B1B1;
+    float: left;
+    margin-top: 8px;
+    margin-right: 10px;
+    position: relative;
+    font-style: normal
+}
+.rank ul li i::before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 9px;
+    color: white;
+    line-height: 16px;
+    width: 16px;
+    text-align: center;
+}
+.rank ul li:first-child i,.rank ul li:nth-child(2) i, .rank ul li:nth-child(3) i{
+    background: #FF6600;
+}
+.rank ul li:first-child i::before{
+    content: "1";
+}
+.rank ul li:nth-child(2) i::before{
+    content: "2";
+}
+.rank ul li:nth-child(3) i::before{
+    content: "3";
+}
+.rank ul li:nth-child(4) i::before{
+    content: "4";
+}
+.rank ul li:nth-child(5) i::before{
+    content: "5";
+}
+.rank ul li:nth-child(6) i::before{
+    content: "6";
+}
+.rank ul li:last-child i::before{
+    content: "7";
+}
+/*.rank li::after{*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    left: 17px;*/
+/*    top: 13px;*/
+/*    width: 10px;*/
+/*    height: 10px;*/
+/*    background: #000;*/
+/*    border-radius: 3px;*/
+/*}*/
+/*.topNew:hover img{*/
+/*    transform: scale(1.1);*/
+/*    filter: brightness(100%);*/
+/*}*/
+/*站长推荐*/
+.zhanzhang li{
+    overflow: hidden;
+    margin-bottom: 10px;
+    height: 60px;
+}
+.zhanzhang .zhanzhangimgStyle{
+    float: left;
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+}
+.zhanzhang .zhanzhangimgStyle img{
+    transition: all 0.6s;
+}
+.zhanzhang li:hover img{
+    transform: scale(1.5);
+}
+.zhanzhang p{
+    margin-top: 4px;
+    line-height: 20px;
+    max-height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    font-size: 14px;
+}
+/*.zhanzhang span{*/
+/*    position: absolute;*/
+/*    bottom: 30%;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    color: #FFF;*/
+/*    text-align: center;*/
+/*    font-size: 15px;*/
+/*    padding: 0 40px;*/
+/*    overflow: hidden;*/
+/*    text-overflow: ellipsis;*/
+/*    -webkit-box-orient: vertical;*/
+/*    display: -webkit-box;*/
+/*    -webkit-line-clamp: 2;*/
+/*    line-height: 22px;*/
+/*}*/
+
+/*.ad video{*/
+/*    height: 100%;*/
+/*    width: 100%;*/
+/*}*/
+
